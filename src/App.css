@@ -1,7 +1,8 @@
 body {
   /* background-color: #dad7cd; */
   background-color: #ccd5ae;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: "Space mono";
   font-optical-sizing: auto;
   font-style: normal;
 }
