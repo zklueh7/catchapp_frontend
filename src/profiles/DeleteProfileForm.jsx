@@ -72,7 +72,7 @@ function DeleteProfileForm() {
   }
 
   return (
-      <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
+      <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
         <h3 className="text-center mt-2">Delete Profile</h3>
         <div className="card">
           <div className="card-body">

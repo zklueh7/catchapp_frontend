@@ -18,15 +18,15 @@ h3 {
 }
 
 .btn:hover {
-      border-color: #1B4332;
+      border-color: #3a5a40;
       border-width: 3px;
       background-color: #588157;
       color: black;
-      
 }
 
-.btn:focus {
-    border-color: #1B4332;
+.btn:active {
+    background-color: #3a5a40 !important;
+    border-color: #3a5a40 !important;
 }
 
 form {
@@ -45,4 +45,8 @@ label {
 .submit-btn {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.heading {
+    text-align: center;;
 }

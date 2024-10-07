@@ -53,7 +53,7 @@ function SignupForm({ signup }) {
   return (
     <div className="container">
       <h3 className="heading">Sign Up</h3>
-      <div className="card-body">
+      <div className="card-body col-md-6 offset-md-3 col-lg-6 offset-lg-3">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input

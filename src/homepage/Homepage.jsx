@@ -18,7 +18,8 @@ function Homepage({ login }) {
   return (
     <div className="container text-center">
       {currentUser
-        ? <h3 className="heading">Welcome to CatchApp!</h3>
+        ? <div><h3 className="heading">Find your next catch today {currentUser.username}!</h3>
+        <img className="falling-gif" src="https://25.media.tumblr.com/55a1be4296cc5516f9ea9ade216e99c0/tumblr_mrdbw8H48e1sx0siio1_400.gif"></img></div>
         : <HomepageAnon login={login} />
       }
     </div>

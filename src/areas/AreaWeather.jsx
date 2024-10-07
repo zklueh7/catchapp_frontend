@@ -41,9 +41,9 @@ function AreaWeather() {
 
   return (
 
-    <div className="container">
+    <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
       <h3 className="heading">{areaInfo.title} Weather</h3>
-        <div className="card-body text-center">
+        <div className="card-body">
             <img src={areaWeather.data.current.condition.icon} className="forecast-img"></img>
             <p>{areaWeather.data.current.condition.text}</p>
             <p>Temperature: {areaWeather.data.current.temp_f} degrees F</p>
