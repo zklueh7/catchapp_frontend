@@ -1,27 +1,10 @@
-.heading {
-    color: #1B4332;
-    font-weight: 800;
-    margin-bottom: 1.4rem;
-    margin-top: 1.6rem;
-}
-
-.subheading {
-    margin-bottom: 2rem;
-    color: #1B4332;
-}
-
-.sign-up {
-    /* width: 80%; */
-    margin-top: 0px;
-}
-
 .or {
     width: 100%; 
     text-align: center; 
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
  } 
  
  .or span { 

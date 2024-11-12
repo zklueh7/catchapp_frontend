@@ -1,6 +1,5 @@
 .area-image {
     width: 100%;
-    /* margin-left: 15%; */
     margin-bottom: 10px;
 }
 
@@ -18,9 +17,4 @@
 
 .forecast-img {
     width: 125px;
-}
-
-.area-home-btn {
-    margin-top: 0px;
-    margin-bottom: 20px;
 }

@@ -8,18 +8,55 @@ body {
 .card-body {
   background-color: #d4d4d4;
   border-radius: 12px;
-  /* border: 2px solid #7c7c7c;  */
-  /* box-shadow: 4px 4px 14px 2px rgba(66, 68, 90, 1); */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 
               0 6px 6px rgba(0, 0, 0, 0.22);
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   margin-top: 25px;
   margin-bottom: 25px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
+.heading {
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subheading {
+  color: black;
+}
+
+
 form {
   background-color: #d4d4d4;
-  padding: 10px;
+}
+
+.form-control {
+  height: 42px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: lightgray;
+}
+
+.btn {
+  background-color: #588157;
+  border-color: #588157;
+  border-width: 3px;
+  color: black;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.btn:hover {
+    border-color: #3a5a40;
+    border-width: 3px;
+    background-color: #588157;
+    color: black;
+}
+
+.btn:active {
+  background-color: #3a5a40 !important;
+  border-color: #3a5a40 !important;
 }
