@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import UserContext from "../auth/UserContext";
 import CatchAppApi from "../api/api";
 import "./Profile.css";
+import miscClimber from "../imgs/misc_climber.jpg";
 
 /** User profile page
  *
@@ -13,24 +14,12 @@ import "./Profile.css";
 
 function Profile() {
   const { currentUser } = useContext(UserContext);
-  const miscClimber = "/public/misc_climber.png";
-
-  async function handleDelete(evt) {
-    evt.preventDefault();
-
-    try {
-      await CatchAppApi.deleteProfile(currentUser.username);
-    } catch (errors) {
-      debugger;
-      return;
-    }
-  }
 
   return (
     <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
-      <h3 className="heading">My Profile</h3>
       <div className="card-body">
-        <img src={currentUser.pictureUrl} className="prof-img"></img>
+        <h3 className="heading">My Profile</h3>
+        <img src={currentUser.pictureUrl ? currentUser.pictureUrl : miscClimber} className="prof-img"></img>
         <p>Username: {currentUser.username}</p>
         <p>First Name: {currentUser.firstName}</p>
         <p>Last Name: {currentUser.lastName}</p>

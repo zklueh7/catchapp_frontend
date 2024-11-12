@@ -25,7 +25,7 @@ function SearchBar({ searchFor }) {
           <input
               className="form-control"
               name="searchTerm"
-              placeholder="Search for an area.."
+              placeholder="Search for an area..."
               value={searchTerm}
               onChange={handleChange}
           />

@@ -31,13 +31,15 @@ function Search() {
   if (!areas) return <LoadingSpinner />;
 
   return (
-    <div className="area-list col-md-6 offset-md-3 pt-4">
-      <SearchBar searchFor={search} />
-      <div className="area-results">
-        {areas.length
-          ? areas.map(area => (<Link className="area-link" to={{ pathname: `/areas/${area.name}` }}>{area.title}</Link>))
-          : <p>Sorry, no results were found!</p>
-        }
+    <div className="container col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+      <div className="card-body">
+        <SearchBar searchFor={search} />
+        <div className="area-results">
+          {areas.length
+            ? areas.map(area => (<Link className="area-link" to={{ pathname: `/areas/${area.name}` }}>{area.title}</Link>))
+            : <p>Sorry, no results were found!</p>
+          }
+        </div>
       </div>
     </div>
   );

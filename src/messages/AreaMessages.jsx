@@ -36,16 +36,19 @@ function AreaMessages() {
   if (!messages) return <LoadingSpinner />;
 
   return (
-    <div className="container">
-      <h3 className="heading">Message Board</h3>
+
+    <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
       <div className="card-body">
-        {messages.length
-          ? <MessageCard messages={messages} />
-          : <p className="lead">Sorry, no messages yet!</p>
-        }
+        <h3 className="heading">Message Board</h3>
+        <div >
+          {messages.length
+            ? <MessageCard messages={messages} />
+            : <p className="sorry">Sorry, no messages yet!</p>
+          }
+        </div>
+        <NewMessageForm area={area} user={currentUser.username} />
+        <Link className="btn area-home-btn" to={{ pathname: `/areas/${area}` }}>Back to Area Home</Link>
       </div>
-      <NewMessageForm area={area} user={currentUser.username} />
-      <Link className="btn area-home-btn" to={{ pathname: `/areas/${area}` }}>Back to Area Home</Link>
     </div>
 
   );

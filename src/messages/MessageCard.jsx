@@ -1,5 +1,6 @@
 import React from "react";
 import "./Message.css";
+import miscClimber from "../imgs/misc_climber.jpg";
 
 /** Show list of message cards.
  *
@@ -16,6 +17,7 @@ function MessageCard({ messages }) {
       {messages.map(message => (
         <div className="message-card">
           <img src={message.pictureUrl} className="thumbnail"></img>
+          <img src={message.pictureUrl ? message.pictureUrl : miscClimber} className="thumbnail"></img>
           <p className="msg-info">{message.fromUser} ({message.timePosted.slice(11, 16)}, {message.timePosted.slice(0, 10)})</p>
           <p className="msg-text">{message.messageText}</p>
         </div>

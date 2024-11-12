@@ -72,42 +72,40 @@ function DeleteProfileForm() {
   }
 
   return (
-      <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
-        <h3 className="text-center mt-2">Delete Profile</h3>
-        <div className="card">
-          <div className="card-body">
-            <p>Are you sure you want to leave CatchApp?</p>
-            <form>
-              <div className="form-group">
-                <label>Confirm password to delete:</label>
-                <input
-                    type="password"
-                    name="password"
-                    className="form-control"
-                    value={formData.password}
-                    onChange={handleChange}
-                />
-              </div>
-
-              {formErrors.length
-                  ? <Alert type="danger" messages={formErrors} />
-                  : null}
-
-              {saveConfirmed
-                  ?
-                  <Alert type="success" messages={["Updated successfully."]} />
-                  : null}
-
-              <button
-                  className="btn btn-danger btn-block mt-2"
-                  onClick={handleSubmit}
-              >
-                Delete
-              </button>
-            </form>
+    <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+      <div className="card-body">
+        <h3 className="heading">Delete Profile</h3>
+        <p>Are you sure you want to leave CatchApp?</p>
+        <form>
+          <div className="form-group">
+            <label>Confirm password to delete:</label>
+            <input
+              type="password"
+              name="password"
+              className="form-control"
+              value={formData.password}
+              onChange={handleChange}
+            />
           </div>
-        </div>
+
+          {formErrors.length
+            ? <Alert type="danger" messages={formErrors} />
+            : null}
+
+          {saveConfirmed
+            ?
+            <Alert type="success" messages={["Updated successfully."]} />
+            : null}
+
+          <button
+            className="btn btn-danger btn-block mt-2"
+            onClick={handleSubmit}
+          >
+            Delete
+          </button>
+        </form>
       </div>
+    </div>
   );
 }
 
