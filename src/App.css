@@ -5,17 +5,23 @@ body {
   font-style: normal;
 }
 
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center; 
+  align-items: center; 
+}
+
 .card-body {
   background-color: #d4d4d4;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 
-              0 6px 6px rgba(0, 0, 0, 0.22);
-  padding: 10px 10px 20px 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25),
+    0 6px 6px rgba(0, 0, 0, 0.22);
+  padding: 10px 30px 20px 30px;
+  margin: 50px;
+  /* flex: 1; */
 }
+
 
 .heading {
   color: black;
@@ -50,10 +56,10 @@ form {
 }
 
 .btn:hover {
-    border-color: #3a5a40;
-    border-width: 3px;
-    background-color: #588157;
-    color: black;
+  border-color: #3a5a40;
+  border-width: 3px;
+  background-color: #588157;
+  color: black;
 }
 
 .btn:active {

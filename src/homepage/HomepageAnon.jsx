@@ -15,19 +15,16 @@ import "./Homepage.css";
 function HomepageAnon({ login }) {
 
     return (
-        <div>
-            <div className="card-body col-md-6 offset-md-3 col-lg-4 offset-lg-4 login">
+        <div className="card-body">
             <h1 className="heading">CatchApp</h1>
             <h6 className="subheading">Log in or create an account to find your next climbing partner today! </h6>
-                    <LoginForm login={login} />
-                    <h2 className="or"><span>OR</span></h2>
-                    <Link className="btn"
-                        to="/signup">
-                        Sign up
-                    </Link>
-            </div>
+            <LoginForm login={login} />
+            <h2 className="or"><span>OR</span></h2>
+            <Link className="btn"
+                to="/signup">
+                Sign up
+            </Link>
         </div>
-
     );
 }
 

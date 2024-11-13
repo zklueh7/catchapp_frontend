@@ -28,7 +28,6 @@ function AreaHome() {
   if (!areaInfo) return <LoadingSpinner />;
 
   return (
-    <div className="container text-center col-md-6 offset-md-3 col-lg-6 offset-lg-3">
       <div className="card-body">
         <h3 className="heading">{areaInfo.title}</h3>
         <p>{areaInfo.description}</p>
@@ -36,7 +35,6 @@ function AreaHome() {
         <Link className="btn" to={{ pathname: `/areas/${areaInfo.name}/weather` }}>Weather</Link>
         <Link className="btn mt-2" to={{ pathname: `/areas/${areaInfo.name}/messages` }}>Message Board</Link>
       </div>
-    </div>
   );
 }
 

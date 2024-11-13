@@ -1,25 +1,17 @@
-.Navigation {
-    background-color: white;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.125);
-  }
-  
-  .nav-link.active {
-    font-weight: bold;
-    color: black;
-  }
+.nav-link.active {
+  font-weight: bold;
+  color: black;
+}
 
-  .mr-4 {
-    margin-right: 5px;
-  }
+.navbar-brand {
+  margin-left: 0.3rem;
+}
 
-  .ml-1 {
-    margin-left: 5px;
-  }
+.nav-item {
+  margin-right: 0.3rem;
+}
 
-  .ml-2 {
-    margin-left: 5px;
-  }
-
-  .navbar {
-    background-color: #588157;
-  }
+.navbar {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+  background-color: #588157;
+}
