@@ -16,7 +16,6 @@ function MessageCard({ messages }) {
     <div>
       {messages.map(message => (
         <div className="message-card">
-          <img src={message.pictureUrl} className="thumbnail"></img>
           <img src={message.pictureUrl ? message.pictureUrl : miscClimber} className="thumbnail"></img>
           <p className="msg-info">{message.fromUser} ({message.timePosted.slice(11, 16)}, {message.timePosted.slice(0, 10)})</p>
           <p className="msg-text">{message.messageText}</p>
