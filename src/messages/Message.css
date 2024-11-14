@@ -12,8 +12,8 @@
 }
 
 .msg-text {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
     font-size: 0.9rem;
 }
 
@@ -23,7 +23,6 @@
     border-radius: 5px;
     border-width: 1px;
     margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 .msg-board {
@@ -36,4 +35,9 @@
 
 .sorry{
     margin-top: 15px;
+}
+
+.msg-send {
+    width: 100%;
+    margin-left: 0px !important;
 }

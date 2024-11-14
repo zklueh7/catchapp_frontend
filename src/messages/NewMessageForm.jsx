@@ -34,7 +34,7 @@ function NewMessageForm({ area, user }) {
   }
 
   return (
-        <div className="card-body">
+        <div className="card-body msg-send">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label>Send a message!</label>
