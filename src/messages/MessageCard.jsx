@@ -13,7 +13,7 @@ import miscClimber from "../imgs/misc_climber.jpg";
 function MessageCard({ messages }) {
 
   return (
-    <div className="MessageCard">
+    <div>
       {messages.map(message => (
         <div className="message-card">
           <img src={message.pictureUrl} className="thumbnail"></img>

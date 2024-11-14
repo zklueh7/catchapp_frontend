@@ -1,6 +1,5 @@
 .thumbnail {
     width: 50px;
-    display: inline;
     margin-left: 5px;
     margin-top: 5px;
 }
@@ -28,10 +27,10 @@
 }
 
 .msg-board {
-    border-color: black;
+    border-color: black; 
     border-style: solid;
-    border-radius: 5px;
-    padding-left: 10px;
+    border-radius: 5px; 
+    padding-left: 10px; 
     padding-right: 10px;
 }
 
