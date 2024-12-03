@@ -2,8 +2,11 @@
     box-shadow: none;
     border-color: #ced4da;
     margin-bottom: 0px;
+    width: 100%;
   }
-  
+  .SearchForm {
+    width: 100%;
+  }
   .area-link {
     display: block;
     text-decoration: none;
@@ -15,5 +18,10 @@
   
 .area-link:hover {
     background-color: #588157;
+  }
+
+  .area-results {
+    text-align: left;
+    width: 100%;
   }
 

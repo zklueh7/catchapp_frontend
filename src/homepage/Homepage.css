@@ -1,18 +1,20 @@
 .or {
-    width: 100%; 
-    text-align: center; 
-    border-bottom: 1px solid #000; 
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
     line-height: 0.1em;
     margin-top: 10px;
     margin-bottom: 10px;
- } 
- 
- .or span { 
+}
+
+.or span {
     background: #d4d4d4;
-     padding: 0 10px; 
+    padding: 0 10px;
     font-size: 1rem;
- }
+}
 
 .falling-gif {
-    width: 100%;
+    width: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

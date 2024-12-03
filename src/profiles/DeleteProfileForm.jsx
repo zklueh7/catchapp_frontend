@@ -72,7 +72,7 @@ function DeleteProfileForm() {
   }
 
   return (
-    <div className="container text-center">
+    <div className="container">
       <div className="card-body">
         <h3 className="heading">Delete Profile</h3>
         <p>Are you sure you want to leave CatchApp?</p>

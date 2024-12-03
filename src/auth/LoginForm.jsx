@@ -28,7 +28,6 @@ function LoginForm({ login }) {
 
   async function handleSubmit(evt) {
     evt.preventDefault();
-    console.log(formData);
     let result = await login(formData);
     if (result.success) {
       navigate("/");
@@ -44,7 +43,6 @@ function LoginForm({ login }) {
   }
 
   return (
-          <div className="card">
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <input
@@ -75,13 +73,12 @@ function LoginForm({ login }) {
                     : null}
 
                 <button
-                    className="btn login"
+                    className="btn"
                     onSubmit={handleSubmit}
                 >
                   Log in
                 </button>
               </form>
-            </div>
   );
 }
 

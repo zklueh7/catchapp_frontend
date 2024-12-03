@@ -94,7 +94,8 @@ function EditProfileForm() {
   }
 
   return (
-      <div className="card-body">
+    <div className="outer-profile">
+      <div className="profile">
         <h3 className="heading">Edit {formData.username}'s Profile</h3>
         <form>
           <div className="form-group">
@@ -188,6 +189,7 @@ function EditProfileForm() {
           </button>
         </form>
       </div>
+    </div>
   );
 }
 

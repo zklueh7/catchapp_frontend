@@ -16,7 +16,7 @@ function Profile() {
   const { currentUser } = useContext(UserContext);
 
   return (
-    <div className="container text-center">
+    <div className="outer-profile">
       <div className="card-body">
         <h3 className="heading">My Profile</h3>
         <img src={currentUser.pictureUrl ? currentUser.pictureUrl : miscClimber} className="prof-img"></img>
