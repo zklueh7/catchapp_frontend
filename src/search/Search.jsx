@@ -31,7 +31,7 @@ function Search() {
   if (!areas) return <LoadingSpinner />;
 
   return (
-    <div className="container">
+    <div className="search">
       <div className="card-body">
         <SearchBar searchFor={search} />
         <div className="area-results">
