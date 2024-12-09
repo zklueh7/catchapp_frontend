@@ -19,8 +19,10 @@
     margin-bottom: 20px;
 }
 
-.homepage {
-    margin-top: 5rem;
+.outer-homepage {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
